@@ -1,0 +1,41 @@
+/* Pastel, mobile-first styles */
+:root{
+  --bg: #fff9fb;
+  --card: #ffffff;
+  --accent: #ff6fa3;
+  --accent-2: #8ec5ff;
+  --muted: #667085;
+  --text: #0f172a;
+  --soft: #f6f0fb;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;background:linear-gradient(180deg,var(--bg), #fff);color:var(--text);-webkit-font-smoothing:antialiased}
+.hero{padding:28px 18px;text-align:center;background:linear-gradient(180deg,#fff,#fff0 100%);border-bottom:1px solid rgba(15,23,42,0.03)}
+.brand{display:flex;gap:12px;align-items:center;justify-content:center}
+.logo{width:44px;height:44px;color:var(--accent);filter:drop-shadow(0 6px 10px rgba(255,111,163,0.12))}
+.hero h1{margin:8px 0 0;font-size:22px}
+.tagline{color:var(--muted);margin-top:6px;font-size:14px}
+.btn{display:inline-block;padding:10px 16px;border-radius:12px;background:linear-gradient(90deg,var(--accent),#ff9cc7);color:white;text-decoration:none;border:none;font-weight:700;margin-top:12px;cursor:pointer;box-shadow:0 6px 18px rgba(255,111,163,0.12)}
+.btn.ghost{background:transparent;color:var(--accent);border:2px dashed rgba(255,111,163,0.2);box-shadow:none}
+.container{padding:16px;max-width:720px;margin:0 auto}
+.card{background:var(--card);border-radius:14px;padding:14px;margin-bottom:12px;box-shadow:0 8px 22px rgba(15,23,42,0.05)}
+.hidden{display:none}
+.card-head{display:flex;align-items:center;justify-content:space-between}
+.quiz-form .q{font-weight:700;margin-top:12px}
+.option{display:block;padding:8px 0;color:var(--muted);font-size:15px}
+.form-actions{margin-top:14px;text-align:center}
+.forecast{padding:12px;border-radius:12px;background:linear-gradient(180deg,#fff,#fff);min-height:140px;box-shadow:inset 0 1px 0 rgba(255,255,255,0.6)}
+.share-area{margin-top:12px;display:flex;gap:8px;flex-wrap:wrap}
+.disclaimer{color:var(--muted);font-size:13px;margin-top:10px}
+.footer{padding:16px;text-align:center;color:var(--muted);font-size:13px}
+.cta-note{text-align:center;color:var(--muted);margin:8px 0;font-size:14px}
+
+/* small variations */
+.btn.small{padding:8px 10px;border-radius:10px;font-size:14px}
+@media(min-width:700px){
+  .hero{padding:36px}
+  .container{padding:24px}
+  .hero h1{font-size:28px}
+}

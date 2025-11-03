@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Relationship Forecast</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header class="hero">
+  <div class="brand">
+    <svg class="logo" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-4.35-9-7.2C-1 8.2 6 3 12 7c6-4 13 1.2 9 6.8C19 16.65 12 21 12 21z" fill="currentColor"/></svg>
+    <h1>Relationship Forecast</h1>
+  </div>
+  <p class="tagline">2-minute quiz • Predict your next argument — and learn how to avoid it 💗</p>
+  <a id="startBtn" class="btn">Start the Quiz</a>
+</header>
+
+<main id="app" class="container">
+  <section id="quizSection" class="card hidden">
+    <div class="card-head"><h2 id="quizTitle">Partner 1 — Quick Quiz</h2></div>
+    <form id="quizForm" class="quiz-form">
+      <!-- Questions -->
+      <div class="q">1) When you're stressed, you usually...</div>
+      <label class="option"> <input type="radio" name="q1" value="1" required> Withdraw and need alone time</label>
+      <label class="option"> <input type="radio" name="q1" value="2"> Ask for a little space then check-in</label>
+      <label class="option"> <input type="radio" name="q1" value="3"> Talk it out right away</label>
+      <label class="option"> <input type="radio" name="q1" value="4"> Try to fix the problem fast</label>
+      <label class="option"> <input type="radio" name="q1" value="5"> Worry and seek reassurance</label>
+
+      <div class="q">2) During disagreements, you tend to...</div>
+      <label class="option"> <input type="radio" name="q2" value="1" required> Stay quiet</label>
+      <label class="option"> <input type="radio" name="q2" value="2"> Take a short break</label>
+      <label class="option"> <input type="radio" name="q2" value="3"> Be direct and clear</label>
+      <label class="option"> <input type="radio" name="q2" value="4"> Focus on solutions</label>
+      <label class="option"> <input type="radio" name="q2" value="5"> Get emotional</label>
+
+      <div class="q">3) You feel closest when your partner...</div>
+      <label class="option"> <input type="radio" name="q3" value="1" required> Gives you quiet time</label>
+      <label class="option"> <input type="radio" name="q3" value="2"> Checks in later</label>
+      <label class="option"> <input type="radio" name="q3" value="3"> Really listens</label>
+      <label class="option"> <input type="radio" name="q3" value="4"> Helps practically</label>
+      <label class="option"> <input type="radio" name="q3" value="5"> Reassures verbally</label>
+
+      <div class="q">4) The thing that frustrates you most is...</div>
+      <label class="option"> <input type="radio" name="q4" value="1" required> Being pressured emotionally</label>
+      <label class="option"> <input type="radio" name="q4" value="2"> Feeling ignored after a fight</label>
+      <label class="option"> <input type="radio" name="q4" value="3"> Repeating the same argument</label>
+      <label class="option"> <input type="radio" name="q4" value="4" value="4"> Decisions made without me</label>
+      <label class="option"> <input type="radio" name="q4" value="5"> No validation of my feelings</label>
+
+      <div class="q">5) After an argument you usually want...</div>
+      <label class="option"> <input type="radio" name="q5" value="1" required> Time alone to calm down</label>
+      <label class="option"> <input type="radio" name="q5" value="2"> A short apology</label>
+      <label class="option"> <input type="radio" name="q5" value="3"> A full conversation to resolve</label>
+      <label class="option"> <input type="radio" name="q5" value="4"> A practical fix or plan</label>
+      <label class="option"> <input type="radio" name="q5" value="5"> Reassurance and cuddles</label>
+
+      <div class="q">6) Pick the phrase that fits you best:</div>
+      <label class="option"> <input type="radio" name="q6" value="1" required> Quiet & reflective</label>
+      <label class="option"> <input type="radio" name="q6" value="2"> Calm but private</label>
+      <label class="option"> <input type="radio" name="q6" value="3"> Expressive & direct</label>
+      <label class="option"> <input type="radio" name="q6" value="4"> Action-oriented</label>
+      <label class="option"> <input type="radio" name="q6" value="5"> Sensitive & warm</label>
+
+      <div class="form-actions">
+        <button type="submit" class="btn">Save Partner Result</button>
+      </div>
+    </form>
+  </section>
+
+  <section id="resultsSection" class="card hidden results-wrap">
+    <div class="card-head"><h2>Relationship Forecast</h2></div>
+    <div id="forecastCard" class="forecast">
+      <!-- forecast content injected here -->
+    </div>
+    <div class="share-area">
+      <button id="downloadBtn" class="btn small">Download Forecast (PNG)</button>
+      <button id="resetBtn" class="btn ghost small">Start Over</button>
+    </div>
+    <p class="disclaimer">For reflection & entertainment — not a substitute for therapy.</p>
+  </section>
+
+  <section id="signupSection" class="card hidden upgrade">
+    <h3>Deep Forecast — Preview</h3>
+    <p>Get a 2-page PDF with tailored scripts, triggers, and a 7-day reconnection plan.</p>
+    <button id="mockPay" class="btn">Preview Sample</button>
+  </section>
+
+  <div class="cta-note">Share your forecast on TikTok — duet your reaction! 🎬</div>
+</main>
+
+<footer class="footer">
+  <p>Made with ❤️ for couples • Built for TikTok • © Relationship Forecast</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
